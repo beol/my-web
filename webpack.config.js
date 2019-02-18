@@ -1,7 +1,7 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  context: __dirname + '/src',
+  context: `${__dirname}/src`,
   entry: './js/index.js',
   module: {
     rules: [
@@ -13,11 +13,23 @@ module.exports = {
         },
       },
       {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'babel-loader',
+          },
+          {
+            loader: 'eslint-loader',
+          },
+        ],
+      },
+      {
         test: /\.html$/,
         use: [
           {
             loader: 'html-loader',
-            options: {  },
+            options: {},
           },
         ],
       },
@@ -25,16 +37,16 @@ module.exports = {
         test: /\.scss$/,
         use: [
           {
-            loader: 'style-loader'
+            loader: 'style-loader',
           },
           {
-            loader: 'css-loader'
+            loader: 'css-loader',
           },
           {
-            loader: 'sass-loader'
-          }
-        ]
-      }
+            loader: 'sass-loader',
+          },
+        ],
+      },
     ],
   },
   plugins: [
