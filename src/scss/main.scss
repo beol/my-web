@@ -1,6 +1,7 @@
 html, body {
     width: 100%;
     height: 100%;
+    background-color: white;
 }
 
 body {
@@ -10,35 +11,52 @@ body {
 
 .container {
     display: grid;
+    grid-template-columns: 1fr 1232px 1fr;
+}
+
+.row {
+    display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 24px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
 }
 
 .page-container {
     width: 100%;
     height: 100vh;
 
-    > header {
-        display: grid;
-        grid-template-columns: 1fr 1232px 1fr;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: minmax(264px, calc((100% - 1232px) / 2 + 240px)) 992px 1fr;
 
-        background-color: #1b1b1b;
+    > header {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+
+        background-color: darkgrey;
         height: 50px;
 
         position: sticky;
         z-index: 100;
         top: 0;
+        align-items: center;
 
-        > nav.container {
-            align-self: center;
+        .flex-row {
+            justify-content: space-between;
 
+        }
+
+        > nav {
             grid-column-start: 2;
             grid-column-end: 3;
 
-            div.navbar {
-                grid-column-start: 1;
-                grid-column-end: 10;
-
+            .navbar {
                 a {
                     text-decoration: none;
                     color: white;
@@ -70,82 +88,75 @@ body {
                         margin-right: 0;
                     }
                 }
+
             }
-
-            div.nav-right {
-                grid-column-start: 11;
-                grid-column-end: 13;
-                justify-self: end;
-
-                button {
-                }
-    
-            }
-
         }
     }
     
-    > .content {
-        display: grid;
-        grid-template-columns: minmax(264px, calc((100% - 1232px) / 2 + 240px)) 992px 1fr;
+    > .sidebar {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
 
-        display: grid;
+        background-color: lightgrey;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding: 10px 0 10px 0;
 
-        > .sidebar {
-            grid-column-start: 1;
-            grid-column-end: 2;
-            min-width: 264px;
-            margin-left: calc((100% - 240px));
-            margin-top: 10px;
-            margin-bottom: 10px;
+        > nav {
+            margin-left: calc(100% - 240px);
+            position: sticky;
+            top: 60px;
 
-            > nav {
-    
-                ul {
-                    list-style: none;
-                    padding: 0;
-                    margin: 0;
-                    overflow: auto;
-                    position: fixed;
-    
-                    li {
-                        a {
-                            text-decoration: none;
-                            line-height: 3;
-                        }
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        line-height: 3;
                     }
                 }
             }
         }
-        
-        > main {
+    }
+    
+    > main {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+
+
+        article {
             grid-column-start: 2;
-            grid-column-end: 3;
+            grid-column-end: 12;
 
-            article {
-                grid-column-start: 2;
-                grid-column-end: 12;
-            }
+            margin: 0 0 50px;
+            padding: 0 0 50px;
+            border-bottom: 1px solid black;
         }
-
-        > .foo {
-            grid-column-start: 3;
-            grid-column-end: 4;
-        }
-
     }
 
     > footer {
-        height: 50px;
-        background-color: lightgrey;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 4;
 
-        display: grid;
-        grid-template-columns: 1fr 1280px 1fr;
+        height: 50px;
+        background-color: grey;
+
+        align-items: center;
+
+        .flex-row {
+            justify-content: flex-end;
+        }
 
         > div {
-            align-self: center;
-            margin: 0 24px;
-            
             grid-column-start: 2;
             grid-column-end: 3;
         }

@@ -12,7 +12,7 @@
     "styles:fix": "prettier --write src/scss/**/*.{css,scss}",
     "lint": "eslint ./src/js/ --ext js,jsx",
     "lint:fix": "eslint ./src/js/ --ext js,jsx --fix",
-    "start": "webpack-dev-server --mode development --open",
+    "start": "webpack-dev-server --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

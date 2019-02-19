@@ -1,8 +1,8 @@
 import React from 'react';
 
 const PageHeader = () => (
-  <header>
-    <nav className="container">
+  <header className="container">
+    <nav className="flex-row">
       <div className="navbar">
         <a href="#" className="brand">
           Foo
@@ -19,9 +19,7 @@ const PageHeader = () => (
           </li>
         </ul>
       </div>
-      <div className="nav-right">
-        <button type="submit">Login</button>
-      </div>
+      <button type="button">Login</button>
     </nav>
   </header>
 );
