@@ -1,18 +1,27 @@
 {
   "name": "my-web",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple responsive web project with modern build tools",
   "main": "index.js",
   "scripts": {
     "start": "gulp",
+    "build": "gulp build",
+    "lint": "eslint js/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Leo",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "eslint": "^5.13.0",
+    "browser-sync": "^2.29.3",
+    "del": "^6.1.1",
+    "eslint": "^8.45.0",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.63.6"
   }
 }

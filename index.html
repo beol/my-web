@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hello world</title>
+    <meta name="description" content="A simple responsive web project with modern build tools">
+    <title>My Web Project</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
-
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <div class="page-grid-container">
       <header>
         <nav>
-          <a href="#" class="brand">Foo</a>
+          <a href="index.html" class="brand">My Web</a>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Documentation</a></li>
-            <li><a href="#">API Reference</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -24,77 +26,126 @@
       <section class="sidebar">
         <nav>
           <ul>
-            <li><a href="#">Lorem Ipsum</a></li>
-            <li><a href="#">Lorem Ipsum</a></li>
-            <li><a href="#">Lorem Ipsum</a></li>
-            <li><a href="#">Lorem Ipsum</a></li>
-            <li><a href="#">Lorem Ipsum</a></li>
-            <li><a href="#">Lorem Ipsum</a></li>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+            <li><a href="#section4">Section 4</a></li>
+            <li><a href="#section5">Section 5</a></li>
           </ul>
         </nav>
       </section>
 
       <main role="main">
-        <article>
+        <article id="section1">
           <header>
-              <h1>Lorem Ipsum</h1>
+            <h1>Welcome to My Web Project</h1>
           </header>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis fringilla mi, quis mattis nisi facilisis vehicula. In vel tempus magna. Quisque vitae velit tellus. Fusce commodo urna sit amet lectus eleifend, sit amet pharetra tortor fermentum. Nullam fringilla turpis ipsum, ac pellentesque mi rutrum vitae. Etiam aliquet elit eu nunc mollis ullamcorper. Phasellus vehicula consequat auctor. Nunc ac erat in lorem venenatis bibendum. Morbi sed laoreet erat, ac maximus turpis. Sed lacinia purus turpis, non maximus velit mattis sed. Proin efficitur vehicula augue, sed suscipit tortor. In dolor ante, dictum in commodo et, volutpat id lectus. Suspendisse posuere elit id est venenatis efficitur. Nulla lorem nisi, dictum non enim sed, sagittis fringilla ex.
+            This is a simple responsive web project built with modern tools like Gulp, Sass, and ES6 JavaScript.
+            The layout uses CSS Grid for a flexible, responsive design that works well on all devices.
           </p>
+          
           <p>
-            Vestibulum luctus consectetur magna ac viverra. Cras rutrum, urna vitae fermentum rhoncus, purus ipsum eleifend eros, et feugiat erat dui nec leo. Mauris vulputate erat nisi, a blandit justo mollis sed. Maecenas commodo varius ligula, vestibulum dignissim magna consequat eu. Nunc accumsan bibendum hendrerit. In aliquam lorem vitae sollicitudin euismod. Aliquam vitae congue sapien, in rhoncus massa. Quisque porttitor vestibulum erat eget congue.
+            The project includes:
           </p>
-          <p>  
-            Aenean fringilla semper cursus. Integer sit amet interdum tortor. Nulla congue sem ac turpis mollis aliquet. Suspendisse et felis at sem consectetur tincidunt vitae ac elit. In maximus sed nisi quis aliquam. Sed velit augue, semper non turpis id, rhoncus bibendum dolor. Morbi nec malesuada dolor, in gravida nulla. Phasellus metus erat, dignissim nec urna ut, finibus consectetur nibh. Aliquam imperdiet est at augue facilisis, in porttitor purus maximus. Maecenas et tortor massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam in gravida elit. Vestibulum convallis lacinia erat, sit amet commodo felis ultrices vitae. Donec sem ipsum, venenatis eget est sit amet, imperdiet eleifend massa.
-            
-            <blockquote>
-              Proin consectetur nisi ullamcorper consectetur pharetra. Nullam in ipsum pretium, varius mauris eget, hendrerit tellus. Fusce gravida rhoncus dolor, sit amet elementum est ornare ut. Vestibulum at commodo lectus. Suspendisse lectus ligula, rutrum id leo quis, laoreet ornare ligula. In in tristique lorem. Praesent sed tortor sit amet dolor hendrerit hendrerit. Nam aliquet leo at lectus molestie condimentum. Phasellus a arcu varius, tempus dolor nec, pulvinar ipsum. Proin molestie urna lorem, vel semper diam dictum ut. Mauris commodo commodo tincidunt. Maecenas posuere malesuada risus et gravida. Morbi nec massa eu odio sagittis feugiat. Proin elit urna, tempor et eleifend id, hendrerit nec dolor.
-            </blockquote>
-            
-          </p>
-
-          <p>
-              Maecenas imperdiet malesuada nunc, id ornare justo. Proin dolor turpis, blandit ac posuere quis, bibendum et est. Integer dignissim sed ex tempor scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec luctus ac diam quis interdum. Aenean a eros et nulla fringilla luctus. Suspendisse ac dui ac ex varius elementum at ultrices massa.              
-            </p>
-
-          <footer>
-
-          </footer>
+          
+          <ul>
+            <li>Responsive grid layout</li>
+            <li>SCSS compilation</li>
+            <li>Browser auto-reload with BrowserSync</li>
+            <li>JavaScript linting with ESLint</li>
+            <li>Image optimization</li>
+            <li>CSS and JavaScript minification for production</li>
+          </ul>
+          
+          <blockquote>
+            A well-structured project is the foundation of maintainable code. This template provides a solid starting point for web development projects of all sizes.
+          </blockquote>
         </article>
-        <article>
-            <header>
-                <h1>Lorem Ipsum</h1>
-            </header>
-  
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis fringilla mi, quis mattis nisi facilisis vehicula. In vel tempus magna. Quisque vitae velit tellus. Fusce commodo urna sit amet lectus eleifend, sit amet pharetra tortor fermentum. Nullam fringilla turpis ipsum, ac pellentesque mi rutrum vitae. Etiam aliquet elit eu nunc mollis ullamcorper. Phasellus vehicula consequat auctor. Nunc ac erat in lorem venenatis bibendum. Morbi sed laoreet erat, ac maximus turpis. Sed lacinia purus turpis, non maximus velit mattis sed. Proin efficitur vehicula augue, sed suscipit tortor. In dolor ante, dictum in commodo et, volutpat id lectus. Suspendisse posuere elit id est venenatis efficitur. Nulla lorem nisi, dictum non enim sed, sagittis fringilla ex.
-            </p>
-            <p>
-              Vestibulum luctus consectetur magna ac viverra. Cras rutrum, urna vitae fermentum rhoncus, purus ipsum eleifend eros, et feugiat erat dui nec leo. Mauris vulputate erat nisi, a blandit justo mollis sed. Maecenas commodo varius ligula, vestibulum dignissim magna consequat eu. Nunc accumsan bibendum hendrerit. In aliquam lorem vitae sollicitudin euismod. Aliquam vitae congue sapien, in rhoncus massa. Quisque porttitor vestibulum erat eget congue.
-            </p>
-            <p>  
-              Aenean fringilla semper cursus. Integer sit amet interdum tortor. Nulla congue sem ac turpis mollis aliquet. Suspendisse et felis at sem consectetur tincidunt vitae ac elit. In maximus sed nisi quis aliquam. Sed velit augue, semper non turpis id, rhoncus bibendum dolor. Morbi nec malesuada dolor, in gravida nulla. Phasellus metus erat, dignissim nec urna ut, finibus consectetur nibh. Aliquam imperdiet est at augue facilisis, in porttitor purus maximus. Maecenas et tortor massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam in gravida elit. Vestibulum convallis lacinia erat, sit amet commodo felis ultrices vitae. Donec sem ipsum, venenatis eget est sit amet, imperdiet eleifend massa.
-              
-              <blockquote>
-                Proin consectetur nisi ullamcorper consectetur pharetra. Nullam in ipsum pretium, varius mauris eget, hendrerit tellus. Fusce gravida rhoncus dolor, sit amet elementum est ornare ut. Vestibulum at commodo lectus. Suspendisse lectus ligula, rutrum id leo quis, laoreet ornare ligula. In in tristique lorem. Praesent sed tortor sit amet dolor hendrerit hendrerit. Nam aliquet leo at lectus molestie condimentum. Phasellus a arcu varius, tempus dolor nec, pulvinar ipsum. Proin molestie urna lorem, vel semper diam dictum ut. Mauris commodo commodo tincidunt. Maecenas posuere malesuada risus et gravida. Morbi nec massa eu odio sagittis feugiat. Proin elit urna, tempor et eleifend id, hendrerit nec dolor.
-              </blockquote>
-              
-            </p>
-  
-            <p>
-              Maecenas imperdiet malesuada nunc, id ornare justo. Proin dolor turpis, blandit ac posuere quis, bibendum et est. Integer dignissim sed ex tempor scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec luctus ac diam quis interdum. Aenean a eros et nulla fringilla luctus. Suspendisse ac dui ac ex varius elementum at ultrices massa.              
-            </p>
-  
-            <footer>
-  
-            </footer>
-          </article>
-        </main>
+        
+        <article id="section2">
+          <header>
+            <h1>Getting Started</h1>
+          </header>
+          
+          <p>
+            To get started with this project, clone the repository and install the dependencies:
+          </p>
+          
+          <pre><code>npm install</code></pre>
+          
+          <p>
+            Then, start the development server:
+          </p>
+          
+          <pre><code>npm start</code></pre>
+          
+          <p>
+            This will compile the SCSS to CSS, watch for file changes, and start a local development server with BrowserSync.
+          </p>
+        </article>
+        
+        <article id="section3">
+          <header>
+            <h1>Features</h1>
+          </header>
+          
+          <h2>Responsive Design</h2>
+          <p>
+            The layout is fully responsive and works well on all devices, from mobile phones to desktop computers.
+            It uses CSS Grid for the main layout and flexbox for components.
+          </p>
+          
+          <h2>Modern JavaScript</h2>
+          <p>
+            The project uses modern JavaScript (ES6+) with ESLint for code quality.
+            The JavaScript is organized into modules for better maintainability.
+          </p>
+          
+          <h2>SCSS</h2>
+          <p>
+            Styles are written in SCSS, which is compiled to CSS using Gulp.
+            The SCSS is organized using variables, mixins, and nested rules for better maintainability.
+          </p>
+        </article>
+        
+        <article id="section4">
+          <header>
+            <h1>Building for Production</h1>
+          </header>
+          
+          <p>
+            To build the project for production, run:
+          </p>
+          
+          <pre><code>npm run build</code></pre>
+          
+          <p>
+            This will:
+          </p>
+          
+          <ul>
+            <li>Compile and minify SCSS to CSS</li>
+            <li>Minify JavaScript</li>
+            <li>Optimize images</li>
+            <li>Copy all assets to a <code>dist</code> folder</li>
+          </ul>
+        </article>
+        
+        <article id="section5" id="contact">
+          <header>
+            <h1>Contact</h1>
+          </header>
+          
+          <p>
+            For more information, please contact us at <a href="mailto:info@example.com">info@example.com</a>.
+          </p>
+        </article>
+      </main>
 
       <footer>
-        <small>&copy; 2019 Leo</small>
+        <small>&copy; 2025 My Web Project. All rights reserved.</small>
       </footer>
     </div>
   </body>
